@@ -1,12 +1,20 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import Button from '@mui/material/Button';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import Image from '../Assets/image.jpg';
 import './styles/home.css';
 
 const Home = () => {
+  const openResume = () => {
+    window.open('./assets/resume-example.pdf');
+  };
+
+  const handleContactInfo = () => {
+    // Handle the button click action for the "Contact Info" button
+    // For example, you can navigate programmatically or perform some other action
+    console.log('Contact Info button clicked');
+  };
+
   return (
     <section id="profile" className="home-section">
       <div className="section-pic-container">
@@ -14,24 +22,21 @@ const Home = () => {
       </div>
       <div className="section-text">
         <p className="section-text-p1">Hello, I'm</p>
-        <h1 className="title">John Doe</h1>
+        <h1 className="title">John Henry</h1>
         <p className="section-text-p2">Frontend Developer</p>
         <div className="btn-container">
-          <Button
-            variant="outlined"
+          <button
             className="btn btn-color-2"
-            onClick={() => window.open('./assets/resume-example.pdf')}
+            onClick={openResume}
           >
             Download CV
-          </Button>
-          <Button
-            variant="outlined"
+          </button>
+          <button
             className="btn btn-color-1"
-            component={Link}
-            to="/contact"
+            onClick={handleContactInfo}
           >
             Contact Info
-          </Button>
+          </button>
         </div>
         <div id="socials-container">
           <LinkedInIcon
@@ -40,7 +45,7 @@ const Home = () => {
           />
           <GitHubIcon
             className="icon"
-            onClick={() => window.open('https://github.com/')}
+            onClick={() => window.open('https://github.com/HenryJS')}
           />
         </div>
       </div>
