@@ -29,7 +29,7 @@ const About = () => {
           <div className="text-container">
           <p>
               I'm a passionate software developer with over 2 years of experience in Frontend Development.
-              My educational background includes a B.Sc. and M.Sc. in Computer Science.
+              My educational background includes a B.Sc. in Computer Technology.
               I specialize in creating elegant and user-friendly web applications, and I love to tackle complex problems.
               With a strong foundation in coding and problem-solving, I bring creativity and attention to detail to every project.
               My goal is to build innovative solutions that make a positive impact on the user experience.

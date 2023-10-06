@@ -41,7 +41,7 @@ const Home = () => {
         <div id="socials-container">
           <LinkedInIcon
             className="icon"
-            onClick={() => window.open('https://linkedin.com/')}
+            onClick={() => window.open('https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BFmp8phbYQs6UkMKnQwxQEw%3D%3D')}
           />
           <GitHubIcon
             className="icon"
