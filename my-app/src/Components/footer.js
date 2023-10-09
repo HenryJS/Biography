@@ -14,10 +14,10 @@ const Footer = () => {
         />
         <GitHubIcon
           className="icon"
-          onClick={() => window.open('https://github.com/')}
+          onClick={() => window.open('https://github.com/HenryJS')}
         />
       </div>
-      <p>&copy; 2023 Your Name. All rights reserved.</p>
+      <p>&copy; 2023 John Henry. All rights reserved.</p>
     </footer>
   );
 };
