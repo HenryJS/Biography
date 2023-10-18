@@ -1,18 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import Image from '../Assets/image.jpg';
 import './styles/home.css';
+import ContactBanner from './contact';
 
 const Home = () => {
+  const [showContactBanner, setShowContactBanner] = useState(false);
+
   const openResume = () => {
-    window.open('./assets/resume-example.pdf');
+    window.open('../Assets/cv.pdf');
   };
 
   const handleContactInfo = () => {
-    // Handle the button click action for the "Contact Info" button
-    // For example, you can navigate programmatically or perform some other action
-    console.log('Contact Info button clicked');
+   setShowContactBanner(true);
+  };
+  const closeContactBanner = () =>{
+    setShowContactBanner(false);
   };
 
   return (
@@ -37,6 +41,9 @@ const Home = () => {
           >
             Contact Info
           </button>
+          {showContactBanner && (
+            <ContactBanner onClose={closeContactBanner} />
+          )}
         </div>
         <div id="socials-container">
           <LinkedInIcon
